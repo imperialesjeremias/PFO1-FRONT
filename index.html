@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio personal de Jeremías Imperiales - Desarrollador Web Frontend">
+    <title>Mi Portafolio Personal</title>
+
+    <!-- Enlace a Google Fonts - Fuente Outfit para un look moderno y profesional -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Enlace al archivo de estilos CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- ============================================================
+         HEADER: Encabezado principal del sitio con el logo/nombre
+         Mejora futura: agregar un logo SVG personalizado
+    ============================================================ -->
+    <header class="header" id="header">
+        <div class="header__container">
+            <a href="#" class="header__logo">
+                <span class="header__logo-icon">&#60;/&#62;</span>
+                <span class="header__logo-text">Jeremías<span class="header__logo-accent">.dev</span></span>
+            </a>
+        </div>
+    </header>
+
+    <!-- ============================================================
+         NAV: Barra de navegación con enlaces a las secciones principales
+         Mejora futura: implementar un menú hamburguesa para mobile
+    ============================================================ -->
+    <nav class="nav" id="navbar">
+        <div class="nav__container">
+            <ul class="nav__list">
+                <li class="nav__item"><a href="#sobre-mi" class="nav__link">Sobre Mí</a></li>
+                <li class="nav__item"><a href="#tarjetas" class="nav__link">Proyectos</a></li>
+                <li class="nav__item"><a href="#habilidades" class="nav__link">Habilidades</a></li>
+                <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+                <li class="nav__item"><a href="#peliculas" class="nav__link">Películas</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- ============================================================
+         MAIN: Contenido principal del portafolio
+         Contiene las secciones de presentación, proyectos, habilidades, 
+         formulario de contacto y películas favoritas
+    ============================================================ -->
+    <main class="main">
+
+        <!-- Sección: Presentación Personal -->
+        <section id="sobre-mi" class="section section--hero">
+            <div class="section__container">
+                <div class="hero">
+                    <div class="hero__content">
+                        <p class="hero__greeting">¡Hola! Soy</p>
+                        <h1 class="hero__title">Jeremías Imperiales</h1>
+                        <p class="hero__subtitle">Desarrollador Web Frontend</p>
+                        <p class="hero__description">
+                            Soy un apasionado desarrollador web en formación, enfocado en crear experiencias 
+                            digitales atractivas e intuitivas. Me interesa el diseño UI/UX, la accesibilidad web 
+                            y las tecnologías frontend modernas. Mi misión es combinar creatividad y código 
+                            para construir sitios web que no solo funcionen bien, sino que también inspiren.
+                        </p>
+                        <a href="#contacto" class="hero__cta">Contáctame</a>
+                    </div>
+                    <div class="hero__image-wrapper">
+                        <img src="img/avatar.png" alt="Avatar de Jeremías Imperiales, desarrollador web" class="hero__image">
+                        <div class="hero__image-glow"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Tarjetas de Proyectos -->
+        <section id="tarjetas" class="section section--projects">
+            <div class="section__container">
+                <h2 class="section__title">Mis Proyectos</h2>
+                <p class="section__subtitle">Una selección de mis trabajos más recientes</p>
+                <div class="cards">
+                    <article class="card">
+                        <div class="card__image-wrapper">
+                            <img src="img/proyecto-web.png" alt="Captura del proyecto de aplicación web Dashboard Analytics" class="card__image">
+                            <div class="card__overlay">
+                                <span class="card__tag">Web App</span>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">Dashboard Analytics</h3>
+                            <p class="card__description">
+                                Aplicación web interactiva para visualización de datos con gráficos 
+                                dinámicos y panel de control en tiempo real.
+                            </p>
+                            <div class="card__techs">
+                                <span class="card__tech">HTML</span>
+                                <span class="card__tech">CSS</span>
+                                <span class="card__tech">JavaScript</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card__image-wrapper">
+                            <img src="img/proyecto-mobile.png" alt="Captura del proyecto de diseño de app móvil TaskFlow" class="card__image">
+                            <div class="card__overlay">
+                                <span class="card__tag">Mobile</span>
+                            </div>
+                        </div>
+                        <div class="card__content">
+                            <h3 class="card__title">TaskFlow App</h3>
+                            <p class="card__description">
+                                Diseño de interfaz para una aplicación móvil de gestión de tareas 
+                                con una experiencia de usuario fluida y moderna.
+                            </p>
+                            <div class="card__techs">
+                                <span class="card__tech">Figma</span>
+                                <span class="card__tech">UI/UX</span>
+                                <span class="card__tech">Prototipo</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección: Listado de Habilidades -->
+        <section id="habilidades" class="section section--skills">
+            <div class="section__container">
+                <h2 class="section__title">Habilidades</h2>
+                <p class="section__subtitle">Tecnologías que manejo y las que quiero aprender</p>
+                <div class="skills-grid">
+                    <div class="skills-column">
+                        <h3 class="skills-column__title">
+                            <span class="skills-column__icon">🚀</span>
+                            Tecnologías que domino
+                        </h3>
+                        <table class="skills-table">
+                            <thead>
+                                <tr>
+                                    <th>Tecnología</th>
+                                    <th>Nivel</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>HTML5</td>
+                                    <td><span class="skill-level skill-level--advanced">Avanzado</span></td>
+                                </tr>
+                                <tr>
+                                    <td>CSS3</td>
+                                    <td><span class="skill-level skill-level--advanced">Avanzado</span></td>
+                                </tr>
+                                <tr>
+                                    <td>JavaScript</td>
+                                    <td><span class="skill-level skill-level--intermediate">Intermedio</span></td>
+                                </tr>
+                                <tr>
+                                    <td>Git & GitHub</td>
+                                    <td><span class="skill-level skill-level--intermediate">Intermedio</span></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div class="skills-column">
+                        <h3 class="skills-column__title">
+                            <span class="skills-column__icon">📚</span>
+                            Quiero aprender
+                        </h3>
+                        <ul class="skills-list">
+                            <li class="skills-list__item">React.js</li>
+                            <li class="skills-list__item">Node.js</li>
+                            <li class="skills-list__item">TypeScript</li>
+                            <li class="skills-list__item">Python</li>
+                            <li class="skills-list__item">Bases de Datos SQL</li>
+                        </ul>
+                    </div>
+
+                    <div class="skills-column">
+                        <h3 class="skills-column__title">
+                            <span class="skills-column__icon">🎮</span>
+                            Hobbies
+                        </h3>
+                        <ul class="skills-list">
+                            <li class="skills-list__item">Videojuegos</li>
+                            <li class="skills-list__item">Cine de ciencia ficción</li>
+                            <li class="skills-list__item">Programación creativa</li>
+                            <li class="skills-list__item">Fotografía</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================================
+             FORMULARIO DE CONTACTO: Permite a los visitantes enviar 
+             sus datos para ponerse en contacto conmigo.
+             Mejora futura: conectar con un backend real para procesar 
+             los envíos del formulario (por ejemplo, con Node.js/Express)
+        ============================================================ -->
+        <section id="contacto" class="section section--contact">
+            <div class="section__container">
+                <h2 class="section__title">Contacto</h2>
+                <p class="section__subtitle">¿Tenés un proyecto en mente? ¡Hablemos!</p>
+                <form class="form" id="contact-form" action="#" method="POST">
+                    <div class="form__group">
+                        <label for="nombre" class="form__label">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" class="form__input" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="apellido" class="form__label">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" class="form__input" placeholder="Tu apellido" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email</label>
+                        <input type="email" id="email" name="email" class="form__input" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="telefono" class="form__label">Teléfono</label>
+                        <input type="tel" id="telefono" name="telefono" class="form__input" placeholder="+54 11 1234-5678">
+                    </div>
+                    <div class="form__group form__group--full">
+                        <label for="mensaje" class="form__label">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" class="form__textarea" placeholder="Contame sobre tu proyecto..." rows="5"></textarea>
+                    </div>
+                    <div class="form__group form__group--full">
+                        <button type="submit" class="form__submit" id="btn-enviar">Enviar Mensaje</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+        <!-- Sección: Películas Favoritas -->
+        <section id="peliculas" class="section section--movies">
+            <div class="section__container">
+                <h2 class="section__title">Mis Películas Favoritas</h2>
+                <p class="section__subtitle">Las tres mejores películas de la historia, según mi criterio</p>
+                <div class="movies">
+                    <article class="movie">
+                        <div class="movie__image-wrapper">
+                            <img src="img/interstellar.png" alt="Poster artístico de la película Interstellar" class="movie__image">
+                            <span class="movie__rank">#1</span>
+                        </div>
+                        <div class="movie__content">
+                            <h3 class="movie__title">Interstellar</h3>
+                            <p class="movie__year">2014 · Christopher Nolan</p>
+                            <p class="movie__description">
+                                Una obra maestra de la ciencia ficción que explora el amor, el tiempo y la 
+                                supervivencia humana. La combinación de ciencia real con una narrativa 
+                                emocionalmente poderosa la convierte en una experiencia cinematográfica única.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="movie">
+                        <div class="movie__image-wrapper">
+                            <img src="img/matrix.png" alt="Poster artístico de la película Matrix" class="movie__image">
+                            <span class="movie__rank">#2</span>
+                        </div>
+                        <div class="movie__content">
+                            <h3 class="movie__title">Matrix</h3>
+                            <p class="movie__year">1999 · Lana y Lilly Wachowski</p>
+                            <p class="movie__description">
+                                Revolucionó el cine con su mezcla de filosofía, acción y efectos visuales 
+                                innovadores. La pregunta sobre la naturaleza de la realidad sigue siendo 
+                                tan relevante hoy como cuando se estrenó.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="movie">
+                        <div class="movie__image-wrapper">
+                            <img src="img/blade-runner.png" alt="Poster artístico de la película Blade Runner 2049" class="movie__image">
+                            <span class="movie__rank">#3</span>
+                        </div>
+                        <div class="movie__content">
+                            <h3 class="movie__title">Blade Runner 2049</h3>
+                            <p class="movie__year">2017 · Denis Villeneuve</p>
+                            <p class="movie__description">
+                                Visualmente impresionante y narrativamente profunda. Explora qué significa 
+                                ser humano en un futuro donde la línea entre lo real y lo artificial se 
+                                difumina. Una secuela que supera las expectativas.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer: Pie de página con enlaces a redes sociales y créditos -->
+    <footer class="footer" id="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__brand">
+                    <a href="#" class="footer__logo">
+                        <span class="footer__logo-icon">&#60;/&#62;</span>
+                        <span class="footer__logo-text">Jeremías<span class="footer__logo-accent">.dev</span></span>
+                    </a>
+                    <p class="footer__tagline">Creando experiencias web con pasión y código.</p>
+                </div>
+                <div class="footer__links">
+                    <h4 class="footer__heading">Redes Sociales</h4>
+                    <ul class="footer__social">
+                        <li><a href="https://github.com/imperialesjeremias" class="footer__social-link" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                        <li><a href="https://linkedin.com" class="footer__social-link" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                        <li><a href="https://twitter.com" class="footer__social-link" target="_blank" rel="noopener noreferrer">Twitter / X</a></li>
+                    </ul>
+                </div>
+                <div class="footer__links">
+                    <h4 class="footer__heading">Navegación</h4>
+                    <ul class="footer__nav">
+                        <li><a href="#sobre-mi" class="footer__nav-link">Sobre Mí</a></li>
+                        <li><a href="#tarjetas" class="footer__nav-link">Proyectos</a></li>
+                        <li><a href="#habilidades" class="footer__nav-link">Habilidades</a></li>
+                        <li><a href="#contacto" class="footer__nav-link">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p class="footer__copyright">&copy; 2026 Jeremías Imperiales. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
