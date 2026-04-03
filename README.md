@@ -2,7 +2,8 @@
 
 Este proyecto es un **Trabajo Práctico (TP)** correspondiente a la **Práctica Formativa Obligatoria 1 (PFO1)** de la materia de Desarrollo Frontend. Consiste en una Landing Page de portafolio personal construida exclusivamente con **HTML y CSS**, aplicando buenas prácticas de estructura semántica, diseño responsivo y accesibilidad web.
 
-🔗 **URL de VERCEL:** 
+🔗 **URL de VERCEL:** [(https://pfo-1-front-indol.vercel.app/)]
+🔗 **URL de GP:** [(https://imperialesjeremias.github.io/PFO1-FRONT/)]
 
 ---
 
