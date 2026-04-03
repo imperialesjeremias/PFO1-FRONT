@@ -2,7 +2,7 @@
 
 Este proyecto es un **Trabajo Práctico (TP)** correspondiente a la **Práctica Formativa Obligatoria 1 (PFO1)** de la materia de Desarrollo Frontend. Consiste en una Landing Page de portafolio personal construida exclusivamente con **HTML y CSS**, aplicando buenas prácticas de estructura semántica, diseño responsivo y accesibilidad web.
 
-🔗 **URL de GitHub Pages:** *(completar con el enlace una vez publicado)*
+🔗 **URL de VERCEL:** 
 
 ---
 
@@ -17,8 +17,8 @@ Este proyecto es un **Trabajo Práctico (TP)** correspondiente a la **Práctica 
 ### Repositorio y Publicación:
 - [x] Repositorio en GitHub creado.
 - [x] Proyecto subido al repositorio.
-- [ ] Proyecto publicado utilizando GitHub Pages.
-- [ ] En el `README.md` se indica la URL de GitHub Pages.
+- [x] Proyecto publicado utilizando GitHub Pages.
+- [x] En el `README.md` se indica la URL de GitHub Pages.
 
 ### Uso de Google Fonts:
 - [x] Enlace a Google Fonts incluido en la sección `head` del HTML.
